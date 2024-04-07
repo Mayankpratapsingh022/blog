@@ -3,6 +3,8 @@
 
 
 import RIveRunner from "../component/activity1"
+import Footer from "../component/footer"
+import Heading from "../component/heading"
 import LottiePlayer from "../component/Lottieplayer"
 import Navbar from "../navbar/page"
 
@@ -11,11 +13,11 @@ export default function introduction(){
 
     return <>
    
-    <Navbar/>
+    <Navbar activeStep={1} previousStep="/" nextStep="Real"/>
      <div className="bg-zinc-50 w-full h-full flex justify-center  py-10 px-5 lg:px-10  ">
 
 
-<div className="text-xl text-zinc-950 lg:w-2/6 md:w-5/6">
+<div className="text-xl text-zinc-950 lg:w-2/6  md:w-5/6">
 
  <p className="text-3xl font-Medium">Introduction to <br></br> Probability and Statistics</p>
  <br></br>
@@ -26,7 +28,9 @@ export default function introduction(){
 </div>
  <p className="mt-10 text-xl"> Ayush was playing with his curious cat in a room filled with five boxes.  He has hidden his cat in one of them as part of a game. However, while Ayush was momentarily distracted, the mischievous feline managed to sneak out of the box and hide in another one. Now, Ayush was puzzled, trying to figure out which box his cat had escaped to. He knew that the probability of choosing the correct box at random was 1 out of 5, but he was determined to find his furry friend.</p>
  <div className="w-full flex flex-col items-center justify-center py-8 ">
-    <p className="text-2xl font-Medium py-3">Activity </p>
+
+  <Heading text="Activity "/>
+   
 <div className=" bg-zinc-100 flex  flex-col  w-full gap-4  border-t-8 border-zinc-900 items-center 
   rounded-lg p-4 shadow-sm shadow-indigo-100 ">
  
@@ -71,7 +75,7 @@ When we have a set of possible outcomes (like the five boxes), the sum of the pr
 <p>Now, let's think about tossing a coin. When you toss a coin, there are two possible outcomes: it can land on heads or tails. So, the probability of getting heads (or tails) is 1 out of 2, because there is only one head (or tail) side out of the two sides of the coin.</p>
 
 <div className="w-full flex flex-col items-center justify-center py-8 my-5">
-<p className="text-2xl font-Medium py-3">Activity </p>
+<Heading text="Activity "/>
 <div className=" bg-zinc-100 flex  w-full flex-col  gap-4  border-t-8  border-zinc-900 items-center 
   rounded-lg p-4 shadow-sm shadow-indigo-100 ">
  <div className="w-full flex flex-col gap-2 ">
@@ -95,7 +99,7 @@ Probability helps us understand how likely things are to happen. It's like guess
 just toggle the button to decide weather you want to rain on earth today or not</p>
 <div className="w-full flex flex-col items-center justify-center py-8 my-5">
   
-<p className="text-2xl font-Medium py-3">Activity </p>
+<Heading text="Activity "/>
 
 <div className=" bg-zinc-100 flex  w-full flex-col  gap-4  border-t-8 border-zinc-900 items-center
   rounded-lg p-4 shadow-sm shadow-indigo-100 ">
@@ -117,8 +121,12 @@ We use probability when we play games, like guessing which color a spinner will 
 <br></br>
 We will learn <b>Real Life Examples</b> in the next chapter
 </p>
+<Footer showPrevious={false} nextPage="Real" flexing="justify-end" />
 </div>
+
      </div>
+
+  
   
     </>
 }
