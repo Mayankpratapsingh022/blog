@@ -3,7 +3,7 @@
 import Footer from "../component/footer"
 import Heading from "../component/heading"
 import LottiePlayer from "../component/Lottieplayer"
-import Navbar from "../navbar/page"
+import Navbar from "../component/navbar"
 
 export default function Real(){
     return(
