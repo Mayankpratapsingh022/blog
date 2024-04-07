@@ -12,22 +12,22 @@ export default function introduction(){
     return <>
    
     <Navbar/>
-     <div className="bg-zinc-50 w-full h-full flex justify-center  py-10 px-5 lg:px-10 ">
+     <div className="bg-zinc-50 w-full h-full flex justify-center  py-10 px-5 lg:px-10  ">
 
 
-<div className="text-xl text-zinc-950">
+<div className="text-xl text-zinc-950 lg:w-2/6 md:w-5/6">
 
  <p className="text-3xl font-Medium">Introduction to <br></br> Probability and Statistics</p>
  <br></br>
 <div className="w-full items-center justify-center">
- <div className="lg:w-1/6">
+ <div className="lg:w-5/6">
 <LottiePlayer src="catdance.lottie"/>
 </div>
 </div>
  <p className="mt-10 text-xl"> Ayush was playing with his curious cat in a room filled with five boxes.  He has hidden his cat in one of them as part of a game. However, while Ayush was momentarily distracted, the mischievous feline managed to sneak out of the box and hide in another one. Now, Ayush was puzzled, trying to figure out which box his cat had escaped to. He knew that the probability of choosing the correct box at random was 1 out of 5, but he was determined to find his furry friend.</p>
- <div className="w-full flex flex-col items-center justify-center py-8 my-5">
+ <div className="w-full flex flex-col items-center justify-center py-8 ">
     <p className="text-2xl font-Medium py-3">Activity </p>
-<div className=" bg-zinc-100 flex  flex-col  gap-4  border-t-8 border-zinc-900 items-center lg:w-1/2
+<div className=" bg-zinc-100 flex  flex-col  w-full gap-4  border-t-8 border-zinc-900 items-center 
   rounded-lg p-4 shadow-sm shadow-indigo-100 ">
  
  <div className="w-full flex flex-col gap-2 ">
@@ -72,23 +72,51 @@ When we have a set of possible outcomes (like the five boxes), the sum of the pr
 
 <div className="w-full flex flex-col items-center justify-center py-8 my-5">
 <p className="text-2xl font-Medium py-3">Activity </p>
-<div className=" bg-zinc-100 flex  flex-col  gap-4  border-t-8 border-zinc-900 items-center lg:w-1/2
+<div className=" bg-zinc-100 flex  w-full flex-col  gap-4  border-t-8  border-zinc-900 items-center 
   rounded-lg p-4 shadow-sm shadow-indigo-100 ">
  <div className="w-full flex flex-col gap-2 ">
   <div className="w-12 h-12 flex items-center justify-center text-zinc-900 font-medium rounded-full bg-gray-200" >
     
     2 </div>  
-    <p className="font-semibold"> Toss a Coin</p>
+    <p className="font-semibold"> Toss a Coin, "Head" or "Tail" both has 50-50 chance</p>
   </div>
   
 <RIveRunner src="toss.riv" cs='w-72 h-72' stateMachineName="toss"/>
 
 
 </div>
-<p>So, probability is like a way of talking about how likely something is to happen. If there are more ways for something to happen, the probability is higher. If there are fewer ways for something to happen, the probability is lower.
+<p className="py-5">So, probability is like a way of talking about how likely something is to happen. If there are more ways for something to happen, the probability is higher. If there are fewer ways for something to happen, the probability is lower.
 
 Probability helps us understand how likely things are to happen. It's like guessing if it will rain or not.</p>
 </div>
+<hr></hr>
+<p className="py-5">You are the creator of the world
+
+just toggle the button to decide weather you want to rain on earth today or not</p>
+<div className="w-full flex flex-col items-center justify-center py-8 my-5">
+  
+<p className="text-2xl font-Medium py-3">Activity </p>
+
+<div className=" bg-zinc-100 flex  w-full flex-col  gap-4  border-t-8 border-zinc-900 items-center
+  rounded-lg p-4 shadow-sm shadow-indigo-100 ">
+ <div className="w-full lg:w-5/6 flex flex-col gap-2 ">
+  <div className="w-12 h-12 flex items-center justify-center text-zinc-900 font-medium rounded-full bg-gray-200" >
+    
+    3</div>  
+    <p className="font-semibold">Control the Weather by toggling the button</p>
+  </div>
+  
+  <RIveRunner src="weather.riv" cs='w-80 h-80' stateMachineName="State Machine 1"/>
+
+
+</div>
+
+</div>
+<p>
+We use probability when we play games, like guessing which color a spinner will land on. It helps us make choices based on what might happen.
+<br></br>
+We will learn <b>Real Life Examples</b> in the next chapter
+</p>
 </div>
      </div>
   
