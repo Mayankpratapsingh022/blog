@@ -1,3 +1,5 @@
+'use client'
+
 import Footer from "../component/footer";
 import Heading from "../component/heading";
 import Navbar from "../navbar/page";
